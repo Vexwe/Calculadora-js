@@ -1,0 +1,80 @@
+/* Estilo geral da página */
+body {
+    background-color: #2c3e50;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container principal da calculadora */
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Visor da calculadora */
+#visor {
+    grid-column: span 4;
+    height: 60px;
+    font-size: 32px;
+    padding: 10px;
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Botões padrão */
+input[type="button"] {
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1abc9c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Botões especiais */
+input[type="button"]:hover {
+    background-color: #16a085;
+}
+
+/* Botões de operações */
+#divisao, #X, #menos, #mais, #igual {
+    background-color: #e67e22;
+}
+
+#divisao:hover, #X:hover, #menos:hover, #mais:hover, #igual:hover {
+    background-color: #d35400;
+}
+
+/* Botões de limpar */
+#AC, #C {
+    background-color: #e74c3c;
+}
+
+#AC:hover, #C:hover {
+    background-color: #c0392b;
+}
+
+/* Botões especiais */
+#porcentagem, #negativo, #ponto {
+    background-color: #9b59b6;
+}
+
+#porcentagem:hover, #negativo:hover, #ponto:hover {
+    background-color: #8e44ad;
+}
+    
