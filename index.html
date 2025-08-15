@@ -9,30 +9,30 @@
 <body>
         <div id="container">
         <input type="text" id="visor" readonly>
-            <input type="button" value="AC" id="AC" onclick="">
-            <input type="button" value="C" id="C" onclick="">
+            <input type="button" value="AC" id="AC" onclick="limpar()">
+            <input type="button" value="C" id="C" onclick="apagar()">
             <input type="button" value="±" id="negativo" onclick="">
-            <input type="button" value="%" id="porcentagem" onclick="">
+            <input type="button" value="%" id="porcentagem" onclick="adicionar('%')">
 
             <input type="button" value="7" id="7" onclick="adicionar('7')">
             <input type="button" value="8" id="8" onclick="adicionar('8')">
             <input type="button" value="9" id="9" onclick="adicionar('9')">
-            <input type="button" value="÷" id="divisao" onclick="">
+            <input type="button" value="/" id="divisao" onclick="adicionar('/')">
         
             <input type="button" value="4" id="4" onclick="adicionar('4')">
             <input type="button" value="5" id="5" onclick="adicionar('5')">
             <input type="button" value="6" id="6" onclick="adicionar('6')">
-            <input type="button" value="X" id="X" onclick="">
+            <input type="button" value="*" id="X" onclick="adicionar('*')">
 
             <input type="button" value="1" id="1" onclick="adicionar('1')">
             <input type="button" value="2" id="2" onclick="adicionar('2')">
             <input type="button" value="3" id="3" onclick="adicionar('3')">
-            <input type="button" value="-" id="menos" onclick="">
+            <input type="button" value="-" id="menos" onclick="adicionar('-')">
 
             <input type="button" value="0" id="0" onclick="adicionar('0')">
-            <input type="button" value="." id="ponto" onclick="">
-            <input type="button" value="=" id="igual" onclick="">
-            <input type="button" value="+" id="mais" onclick="">
+            <input type="button" value="." id="ponto" onclick="adicionar('.')">
+            <input type="button" value="=" id="igual" onclick="calcular()">
+            <input type="button" value="+" id="mais" onclick="adicionar('+')">
 
     </div> 
     <script src="script.js"></script>
